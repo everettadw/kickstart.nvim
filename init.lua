@@ -99,7 +99,7 @@ do
   vim.g.maplocalleader = ' '
 
   -- Set to true if you have a Nerd Font installed and selected in the terminal
-  vim.g.have_nerd_font = false
+  vim.g.have_nerd_font = true
 
   -- [[ Setting options ]]
   --  See `:help vim.o`
@@ -447,6 +447,15 @@ do
 
   -- ... and there is more!
   --  Check out: https://github.com/nvim-mini/mini.nvim
+
+  vim.pack.add { gh "folke/lazydev.nvim" }
+  require("lazydev").setup({
+    library = {
+      { path = "wezterm-types", mods = { "wezterm" } },
+    },
+  })
+
+  vim.pack.add { gh "DrKJeff16/wezterm-types" }
 end
 
 -- ============================================================
