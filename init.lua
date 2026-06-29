@@ -158,6 +158,9 @@ do
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+  vim.opt.number = true
+  vim.opt.relativenumber = true
+
   -- Preview substitutions live, as you type!
   vim.o.inccommand = 'split'
 
@@ -184,6 +187,9 @@ do
   -- Clear highlights on search when pressing <Esc> in normal mode
   --  See `:help hlsearch`
   vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+  vim.keymap.set('n', '<leader>O', 'O<Esc>O', {
+    desc = "Add two lines above and edit the top one",
+  })
 
   -- Diagnostic Config & Keymaps
   --  See `:help vim.diagnostic.Opts`
@@ -704,6 +710,7 @@ do
     -- clangd = {},
     -- gopls = {},
     pyright = {},
+    taplo = {},
     -- rust_analyzer = {},
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
