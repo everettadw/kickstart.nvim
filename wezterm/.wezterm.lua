@@ -11,8 +11,9 @@ config.font_size = 14
 config.enable_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
 
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 10
+config.win32_system_backdrop = "Acrylic"
 
 config.colors = {
     foreground = "#CBE0F0",
