@@ -6,14 +6,15 @@ $hostname\
 $directory\
 $git_branch\
 $git_status\
-$nodejs\
+$fill\
 $python\
-$lua\
-$rust\
-$golang\
+$nodejs\
 $cmd_duration\
 $line_break\
 $character"""
+
+[fill]
+symbol = ' '
 
 [directory]
 truncation_length = 3
